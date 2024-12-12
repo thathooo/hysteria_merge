@@ -1,0 +1,149 @@
+port: 7890
+allow-lan: true
+mode: rule
+log-level: info
+unified-delay: true
+global-client-fingerprint: chrome
+dns:
+  enable: true
+  listen: :53
+  ipv6: true
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  default-nameserver:
+  - 223.5.5.5
+  - 8.8.8.8
+  nameserver:
+  - https://dns.alidns.com/dns-query
+  - https://doh.pub/dns-query
+  fallback:
+  - https://1.0.0.1/dns-query
+  - tls://dns.google
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
+    ipcidr:
+    - 240.0.0.0/4
+proxies:
+- name: Russia_Moscow_hy_0
+  type: hysteria
+  server: 46.17.43.223
+  port: 64907
+  ports: 30000-40000
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Russia_Moscow_hy_1
+  type: hysteria
+  server: 46.17.43.223
+  port: 12345
+  ports: 12345
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Russia_Moscow_hy_2
+  type: hysteria
+  server: 46.17.43.223
+  port: 12345
+  ports: 12345
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Russia_Moscow_hy_3
+  type: hysteria
+  server: 46.17.43.223
+  port: 12345
+  ports: 12345
+  auth_str: dongtaiwang.com
+  up: 1000
+  down: 1000
+  fast-open: true
+  protocol: udp
+  sni: bing.com
+  skip-cert-verify: true
+  alpn:
+  - h3
+- name: Russia_Moscow_hy2_0
+  type: hysteria2
+  server: 46.17.41.189
+  port: 50717
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Russia_Moscow_hy2_1
+  type: hysteria2
+  server: 46.17.41.189
+  port: 50717
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Russia_Moscow_hy2_2
+  type: hysteria2
+  server: 46.17.41.189
+  port: 50717
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: Russia_Moscow_hy2_3
+  type: hysteria2
+  server: 46.17.41.189
+  port: 50717
+  password: dongtaiwang.com
+  fast-open: true
+  sni: www.bing.com
+  skip-cert-verify: true
+proxy-groups:
+- name: 节点选择
+  type: select
+  proxies:
+  - 自动选择
+  - DIRECT
+  - Russia_Moscow_hy_0
+  - Russia_Moscow_hy_1
+  - Russia_Moscow_hy_2
+  - Russia_Moscow_hy_3
+  - Russia_Moscow_hy2_0
+  - Russia_Moscow_hy2_1
+  - Russia_Moscow_hy2_2
+  - Russia_Moscow_hy2_3
+- name: 自动选择
+  type: url-test
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+  tolerance: 50
+  proxies:
+  - Russia_Moscow_hy_0
+  - Russia_Moscow_hy_1
+  - Russia_Moscow_hy_2
+  - Russia_Moscow_hy_3
+  - Russia_Moscow_hy2_0
+  - Russia_Moscow_hy2_1
+  - Russia_Moscow_hy2_2
+  - Russia_Moscow_hy2_3
+rules:
+- DOMAIN,clash.razord.top,DIRECT
+- DOMAIN,yacd.haishan.me,DIRECT
+- GEOIP,LAN,DIRECT
+- GEOIP,CN,DIRECT
+- MATCH,节点选择
