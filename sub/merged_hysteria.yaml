@@ -28,8 +28,8 @@ proxies:
 - name: Russia_None_hy_0
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -42,8 +42,8 @@ proxies:
 - name: Russia_None_hy_1
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -56,8 +56,8 @@ proxies:
 - name: Russia_None_hy_2
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -70,8 +70,8 @@ proxies:
 - name: Russia_None_hy_3
   type: hysteria
   server: 185.22.155.71
-  port: 63717
-  ports: 40000-50000
+  port: 24342
+  ports: 24342
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
