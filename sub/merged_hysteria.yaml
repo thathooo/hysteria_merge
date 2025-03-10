@@ -67,11 +67,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_None_hy_3
+- name: Russia_Moscow_hy_3
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 46.17.41.174
+  port: 10469
+  ports: 10469
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -122,7 +122,7 @@ proxy-groups:
   - Russia_None_hy_0
   - Russia_None_hy_1
   - Russia_None_hy_2
-  - Russia_None_hy_3
+  - Russia_Moscow_hy_3
   - Russia_Moscow_hy2_0
   - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
@@ -136,7 +136,7 @@ proxy-groups:
   - Russia_None_hy_0
   - Russia_None_hy_1
   - Russia_None_hy_2
-  - Russia_None_hy_3
+  - Russia_Moscow_hy_3
   - Russia_Moscow_hy2_0
   - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
