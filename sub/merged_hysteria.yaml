@@ -84,23 +84,23 @@ proxies:
 - name: Russia_Moscow_hy2_0
   type: hysteria2
   server: 46.17.41.217
-  port: 37481
+  port: 4395
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
   skip-cert-verify: true
-- name: United States_Los Angeles_hy2_1
+- name: Russia_Moscow_hy2_1
   type: hysteria2
-  server: 108.181.5.133
-  port: 15544
+  server: 46.29.163.171
+  port: 35751
   password: dongtaiwang.com
   fast-open: true
-  sni: apple.com
+  sni: www.bing.com
   skip-cert-verify: true
 - name: Russia_Moscow_hy2_2
   type: hysteria2
   server: 46.29.163.171
-  port: 18626
+  port: 35751
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -108,7 +108,7 @@ proxies:
 - name: Russia_Moscow_hy2_3
   type: hysteria2
   server: 46.17.41.217
-  port: 37481
+  port: 4395
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -124,7 +124,7 @@ proxy-groups:
   - Russia_None_hy_2
   - Russia_Moscow_hy_3
   - Russia_Moscow_hy2_0
-  - United States_Los Angeles_hy2_1
+  - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
   - Russia_Moscow_hy2_3
 - name: 自动选择
@@ -138,7 +138,7 @@ proxy-groups:
   - Russia_None_hy_2
   - Russia_Moscow_hy_3
   - Russia_Moscow_hy2_0
-  - United States_Los Angeles_hy2_1
+  - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
   - Russia_Moscow_hy2_3
 rules:
