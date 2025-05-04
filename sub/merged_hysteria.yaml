@@ -39,11 +39,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_Moscow_hy_1
+- name: United States_None_hy_1
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -67,11 +67,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_Moscow_hy_3
+- name: United States_None_hy_3
   type: hysteria
-  server: 46.17.41.174
-  port: 10469
-  ports: 10469
+  server: 208.87.243.187
+  port: 40528
+  ports: 40528
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -120,9 +120,9 @@ proxy-groups:
   - 自动选择
   - DIRECT
   - Russia_None_hy_0
-  - Russia_Moscow_hy_1
+  - United States_None_hy_1
   - Russia_None_hy_2
-  - Russia_Moscow_hy_3
+  - United States_None_hy_3
   - Russia_Moscow_hy2_0
   - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
@@ -134,9 +134,9 @@ proxy-groups:
   tolerance: 50
   proxies:
   - Russia_None_hy_0
-  - Russia_Moscow_hy_1
+  - United States_None_hy_1
   - Russia_None_hy_2
-  - Russia_Moscow_hy_3
+  - United States_None_hy_3
   - Russia_Moscow_hy2_0
   - Russia_Moscow_hy2_1
   - Russia_Moscow_hy2_2
