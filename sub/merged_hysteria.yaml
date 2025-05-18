@@ -84,7 +84,7 @@ proxies:
 - name: Russia_Moscow_hy2_0
   type: hysteria2
   server: hy2.694463.xyz
-  port: 10011
+  port: 30033
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -92,7 +92,7 @@ proxies:
 - name: Russia_Moscow_hy2_1
   type: hysteria2
   server: hy2.694463.xyz
-  port: 10011
+  port: 30033
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -100,7 +100,7 @@ proxies:
 - name: Russia_Moscow_hy2_2
   type: hysteria2
   server: hy2.694463.xyz
-  port: 10011
+  port: 30033
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
@@ -108,7 +108,7 @@ proxies:
 - name: Russia_Moscow_hy2_3
   type: hysteria2
   server: hy2.694463.xyz
-  port: 10011
+  port: 30033
   password: dongtaiwang.com
   fast-open: true
   sni: www.bing.com
