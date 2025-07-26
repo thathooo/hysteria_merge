@@ -25,11 +25,11 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: Russia_None_hy_0
+- name: United States_Dallas_hy_0
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -39,11 +39,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_None_hy_1
+- name: United States_Dallas_hy_1
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -53,11 +53,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_None_hy_2
+- name: United States_Dallas_hy_2
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -67,11 +67,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_None_hy_3
+- name: United States_Dallas_hy_3
   type: hysteria
-  server: 185.22.155.71
-  port: 10803
-  ports: 10803
+  server: 172.245.235.201
+  port: 38814
+  ports: 38814
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -81,37 +81,37 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: Russia_Moscow_hy2_0
+- name: France_Paris_hy2_0
   type: hysteria2
-  server: 45.129.2.108
-  port: 50850
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: Russia_Moscow_hy2_1
+- name: France_Paris_hy2_1
   type: hysteria2
-  server: 46.17.41.217
-  port: 30033
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: The Netherlands_Amsterdam_hy2_2
+- name: France_Paris_hy2_2
   type: hysteria2
-  server: 163.172.217.10
-  port: 10011
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
-- name: The Netherlands_Amsterdam_hy2_3
+- name: France_Paris_hy2_3
   type: hysteria2
-  server: 163.172.217.10
-  port: 10011
+  server: 64.31.63.57
+  port: 44462
   password: dongtaiwang.com
   fast-open: true
-  sni: www.bing.com
+  sni: apple.com
   skip-cert-verify: true
 proxy-groups:
 - name: 节点选择
@@ -119,28 +119,28 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - Russia_None_hy_0
-  - Russia_None_hy_1
-  - Russia_None_hy_2
-  - Russia_None_hy_3
-  - Russia_Moscow_hy2_0
-  - Russia_Moscow_hy2_1
-  - The Netherlands_Amsterdam_hy2_2
-  - The Netherlands_Amsterdam_hy2_3
+  - United States_Dallas_hy_0
+  - United States_Dallas_hy_1
+  - United States_Dallas_hy_2
+  - United States_Dallas_hy_3
+  - France_Paris_hy2_0
+  - France_Paris_hy2_1
+  - France_Paris_hy2_2
+  - France_Paris_hy2_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - Russia_None_hy_0
-  - Russia_None_hy_1
-  - Russia_None_hy_2
-  - Russia_None_hy_3
-  - Russia_Moscow_hy2_0
-  - Russia_Moscow_hy2_1
-  - The Netherlands_Amsterdam_hy2_2
-  - The Netherlands_Amsterdam_hy2_3
+  - United States_Dallas_hy_0
+  - United States_Dallas_hy_1
+  - United States_Dallas_hy_2
+  - United States_Dallas_hy_3
+  - France_Paris_hy2_0
+  - France_Paris_hy2_1
+  - France_Paris_hy2_2
+  - France_Paris_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
