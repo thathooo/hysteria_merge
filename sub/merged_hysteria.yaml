@@ -25,11 +25,11 @@ dns:
     ipcidr:
     - 240.0.0.0/4
 proxies:
-- name: United States_Dallas_hy_0
+- name: The Netherlands_Amsterdam_hy_0
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -39,11 +39,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Dallas_hy_1
+- name: The Netherlands_Amsterdam_hy_1
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -53,11 +53,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Dallas_hy_2
+- name: The Netherlands_Amsterdam_hy_2
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -67,11 +67,11 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: United States_Dallas_hy_3
+- name: The Netherlands_Amsterdam_hy_3
   type: hysteria
-  server: 172.245.235.201
-  port: 38814
-  ports: 38814
+  server: 109.104.153.91
+  port: 37519
+  ports: 10000-20000
   auth_str: dongtaiwang.com
   up: 1000
   down: 1000
@@ -81,34 +81,34 @@ proxies:
   skip-cert-verify: true
   alpn:
   - h3
-- name: France_Paris_hy2_0
+- name: United States_Los Angeles_hy2_0
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_Paris_hy2_1
+- name: United States_Los Angeles_hy2_1
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_Paris_hy2_2
+- name: United States_Los Angeles_hy2_2
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
   skip-cert-verify: true
-- name: France_Paris_hy2_3
+- name: United States_Los Angeles_hy2_3
   type: hysteria2
-  server: 64.31.63.57
-  port: 44462
+  server: 104.168.10.176
+  port: 35205
   password: dongtaiwang.com
   fast-open: true
   sni: apple.com
@@ -119,28 +119,28 @@ proxy-groups:
   proxies:
   - 自动选择
   - DIRECT
-  - United States_Dallas_hy_0
-  - United States_Dallas_hy_1
-  - United States_Dallas_hy_2
-  - United States_Dallas_hy_3
-  - France_Paris_hy2_0
-  - France_Paris_hy2_1
-  - France_Paris_hy2_2
-  - France_Paris_hy2_3
+  - The Netherlands_Amsterdam_hy_0
+  - The Netherlands_Amsterdam_hy_1
+  - The Netherlands_Amsterdam_hy_2
+  - The Netherlands_Amsterdam_hy_3
+  - United States_Los Angeles_hy2_0
+  - United States_Los Angeles_hy2_1
+  - United States_Los Angeles_hy2_2
+  - United States_Los Angeles_hy2_3
 - name: 自动选择
   type: url-test
   url: http://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
   proxies:
-  - United States_Dallas_hy_0
-  - United States_Dallas_hy_1
-  - United States_Dallas_hy_2
-  - United States_Dallas_hy_3
-  - France_Paris_hy2_0
-  - France_Paris_hy2_1
-  - France_Paris_hy2_2
-  - France_Paris_hy2_3
+  - The Netherlands_Amsterdam_hy_0
+  - The Netherlands_Amsterdam_hy_1
+  - The Netherlands_Amsterdam_hy_2
+  - The Netherlands_Amsterdam_hy_3
+  - United States_Los Angeles_hy2_0
+  - United States_Los Angeles_hy2_1
+  - United States_Los Angeles_hy2_2
+  - United States_Los Angeles_hy2_3
 rules:
 - DOMAIN,clash.razord.top,DIRECT
 - DOMAIN,yacd.haishan.me,DIRECT
